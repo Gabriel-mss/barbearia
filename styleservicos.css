@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #23232e;
+    height: 8vh;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+  div {
+    
+    font-family: roboto;
+    font-size: large;
+    color: white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-180px;
+    color:#FFF;
+  }
+  
+  main{
+    background: url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat
+    center center;
+    background-size: cover;
+    height: 92vh;
+    position: relative;
+  }
+
+  @media (max-device-width: 900px) {
+    body{
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+  
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  /* PÁGINA DE SERVIÇOS*/
+
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 50px;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 30px;
+    color:rgb(255, 238, 0);
+    text-align: center;
+    font-weight: bolder; 
+  } 
+
+  .barba {
+    display: inline-block;
+    background-color: rgba(245, 248, 32, 0.9);
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+  
+  .bigode {
+    background-color: rgba(245, 248, 32, 0.9);
+    height: 15vh;
+    width: 15vw;
+    display: inline-block;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+  
+  .tintura {
+    background-color: rgba(245, 248, 32, 0.9);
+    display: inline-block;
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    margin-top: 150px;
+    margin-right: 330px;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+    
+  .corte {
+    background-color: rgba(245, 248, 32, 0.9);
+    display: inline-block;
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 200px;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+    
+  .relaxamento {
+    background-color: rgba(245, 248, 32, 0.9);
+    display: inline-block;
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    margin-top: 25px;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+
+  .pezinho {
+    background-color: rgba(245, 248, 32, 0.9);
+    display: inline-block;
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    margin-left: 280px;
+    margin-right: 250px;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+
+  .sobrancelha {
+    background-color: rgba(245, 248, 32, 0.9);
+    display: inline-block;
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+
+  .hidratacao {
+    background-color: rgba(245, 248, 32, 0.9);
+    display: inline-block;
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 280px;
+    margin-right: 250px;
+    margin-bottom: 250px;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+
+  .selagem {
+    background-color: rgba(245, 248, 32, 0.9);
+    display: inline-block;
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 280px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center ; 
+    border-radius: 25px;  
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: rgba(7, 7, 7, 0.9);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
